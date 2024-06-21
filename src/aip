@@ -1,0 +1,1668 @@
+import React, { useState } from 'react'
+
+export function App(props) {
+
+ /*9*/
+	  /*const str1 = "text1";
+	  const str2 = "text2";*/
+	  /*10*/
+	  /*const name = 'user';
+	  const age  = '30';*/
+	  /*11*/
+	  /*const arr = [1, 2, 3, 4, 5];*/
+	  /*12*/
+	  /*const obj = {name: 'john', surname: 'smit'};*/
+    /*13*/
+    /*const attr = 'block';*/
+    /*14*/
+    /*const li1 = <li>text1</li>;
+	  const li2 = <li>text2</li>;
+	  const li3 = <li>text3</li>;*/
+    /*15*/
+    /*const items = <ul><li>text1</li><li>text2</li><li>text3</li></ul>;*/
+    /*19*/
+    /*const num1 = 3;
+	  const num2 = 2;*/
+    /*20*/
+	  /*const name = 'john';
+	  const surname = 'smit';*/
+    /*21*/
+    /*const num = 4;*/
+    /*22*/
+    /*let text;
+    const isAdult = false;
+    if (isAdult) {
+		  text = <p>text1</p>;
+	  } else {
+      text = <p>text2</p>
+    }*/
+    /*23*/
+    /*let text;
+    const isAdmin = true;
+    if (isAdmin) {
+		  text = <p>text</p>
+	  } else {
+
+	  }*/
+    /*24*/
+    /*const age = 19;*/
+	/*25*/
+	/*const isAuth = false;*/
+	/*26*/
+	/*const isAuth = true;*/
+	/*27
+	function getDigitsSum(num) {
+		return num == 123;
+	}
+	const sum = getDigitsSum(123);*/
+	/*37*/
+    /*const arr = [
+	<li>1</li>,
+	<li>2</li>,
+	<li>3</li>,
+	<li>4</li>,
+	<li>5</li>,
+	];*/
+        /*38*/
+  	/*const arr = [];
+	
+	for (let i = 1; i <= 5; i++) {
+		arr.push(<p>{i}</p>);
+	}*/
+        /*39*/
+    /*const arr = ['a', 'b', 'c', 'd', 'e'];
+    const res = arr.map(function(item) {
+		return <p>{item}</p>;
+	});*/
+        /*40*/
+    /*const arr = ['a', 'b', 'c', 'd', 'e'];
+    const res = arr.map(function(item, index) {
+    	return <p key={index}>{item}</p>;
+    });*/
+        /*41
+		const users = [
+			{name: 'user1', surn: 'surn1', age: 30},
+			{name: 'user2', surn: 'surn2', age: 31},
+			{name: 'user3', surn: 'surn3', age: 32},
+			];*/
+		/*42*/
+		/*const users = [
+			{name: 'user1', surn: 'surn1', age: 30},
+			{name: 'user2', surn: 'surn2', age: 31},
+			{name: 'user3', surn: 'surn3', age: 32},
+		];
+		function App() {
+			const res = users.map(function(item) {
+				return <ul key = {item.id}><li>{item.name}</li><li>{item.surn}</li><li>{item.age}</li></ul>;
+			});*/
+		/*43*/
+		/*const users = [
+			{id: 1, name: 'user1', surn: 'surn1', age: 30},
+			{id: 2, name: 'user2', surn: 'surn2', age: 31},
+			{id: 3, name: 'user3', surn: 'surn3', age: 32},
+		];
+		function App() {
+			const rows = users.map(function(item) {
+				return <tr key={item.name}>
+						<td>{item.name}</td>
+						<td>{item.surn}</td>
+						<td>{item.age}</td>
+				</tr>;
+			});*/
+		/*44-NONE*/
+		/*45*/
+		/*const prods = [
+			{id: 1, name: 'product1', cost: 100},
+			{id: 2, name: 'product2', cost: 200},
+			{id: 3, name: 'product3', cost: 300},
+		];*/
+		/*46*/
+		/*const prods = [
+			{id: 'GYi9G_uC4gBF1e2SixDvu', name: 'product1', cost: 100},
+			{id: 'IWSpfBPSV3SXgRF87uO74', name: 'product2', cost: 200},
+			{id: 'JAmjRlfQT8rLTm5tG2m1L', name: 'product3', cost: 300},
+		];*/
+		/*47-NONE*/
+		/*48*/
+		/*function id() {
+			// тут генерация id
+		}*/
+		/*49*/
+		/*const prods = [
+			{id: id(), name: 'product1', cost: 100},
+			{id: id(), name: 'product2', cost: 200},
+			{id: id(), name: 'product3', cost: 300},
+		];*/
+		/*50*/
+
+		/*51-NONE*/
+		/*52*/
+    	/*const [name, setName] = useState('Name ');
+    	const [surname, setSurname] = useState('Surname ');
+    	const [age, setAge] = useState('38 ');*/
+  		/*53*/
+    	/*const [name, setName] = useState('Alexander ');
+    	const [surname, setSurname] = useState('Ivanov ');*/
+  		/*54*/
+   	 	/*const [banned, setBanned] = useState(false);*/
+  		/*55*/
+    	/*const [count, setCount] = useState(0);*/
+  		/*56*/
+    	/*const [value1, setValue1] = useState('');
+    	const [value2, setValue2] = useState('');*/
+  		/*57*/
+  		/*const [value, setValue] = useState(0);
+	
+		function handleChange(event) {
+		setValue(event.target.value);
+		}*/
+  		/*58_1*/
+  		/*function count(age) {
+		return (2024 - age);
+  		}
+		const [value, setValue] = useState(0);
+	
+		function handleChange(event) {
+		setValue(event.target.value);
+		}*/
+  		/*58_2*/
+  		/*function count(Fg) {
+			return (5/9*(Fg-32));
+  		}
+		const [value, setValue] = useState(0);
+	
+		function handleChange(event) {
+		setValue(event.target.value);
+		}*/
+ 		/*59*/
+    	/*const [value1, setValue1] = useState(0);
+		const [value2, setValue2] = useState(0);
+    	const [value3, setValue3] = useState(0);
+    	const [value4, setValue4] = useState(0);
+    	const [value5, setValue5] = useState(0);
+	
+		function handleChange1(event) {
+		setValue1(+event.target.value);
+		}
+		function handleChange2(event) {
+		setValue2(+event.target.value);
+		}
+		function handleChange3(event) {
+		setValue3(+event.target.value);
+		}
+  		function handleChange4(event) {
+		setValue4(+event.target.value);
+		}
+  		function handleChange5(event) {
+		setValue5(+event.target.value);
+		}*/
+  		/*60*/
+   		/*const [value1, setValue1] = useState(0);
+		const [value2, setValue2] = useState(0);
+    	const [value3, setValue3] = useState(0);
+    	const [value4, setValue4] = useState(0);
+    	const [value5, setValue5] = useState(0);
+    	const [value6, setValue6] = useState(0);
+		const [result, setResult] = useState(0);
+    	var curr = new Date();
+    	curr.setDate(curr.getDate());
+    	var date = curr.toISOString().substring(0,10);*/
+  		/*61*/
+    	/*const [value, setValue] = useState('');*/
+  		/*62_1*/
+    	/*const [isChecked, setIsChecked] = useState(false);
+    	const [message, setMessage] = useState('');
+
+    	const handleButtonClick = () => {
+      	if (isChecked) {
+        setMessage('Здравствуйте!');
+    	} else {
+        setMessage('До свидания!');
+     	}
+    	}
+
+    	const handleCheckboxChange = (event) => {
+      	setIsChecked(event.target.checked);
+   		}*/
+  		/*62_2*/
+    	/*const [isChecked1, setIsChecked1] = useState(false);
+    	const [message1, setMessage1] = useState('');
+
+    	const handleButtonClick1 = () => {
+      	if (isChecked1) {
+        setMessage1('+');
+      	} else {
+        setMessage1('-');
+    	}
+    	}
+
+    	const handleCheckboxChange1 = (event) => {
+     	setIsChecked1(event.target.checked);
+    	}
+    
+  
+  
+    	const [isChecked2, setIsChecked2] = useState(false);
+    	const [message2, setMessage2] = useState('');
+
+    	const handleButtonClick2 = () => {
+     	if (isChecked2) {
+        setMessage2('+');
+     	} else {
+        setMessage2('-');
+     	}
+   		}
+
+    	const handleCheckboxChange2 = (event) => {
+      	setIsChecked2(event.target.checked);
+    	}
+
+
+
+
+    	const [isChecked3, setIsChecked3] = useState(false);
+   		const [message3, setMessage3] = useState('');
+
+    	const handleButtonClick3 = () => {
+      	if (isChecked3) {
+        setMessage3('+');
+      	} else {
+        setMessage3('-');
+      	}
+    	}
+
+    	const handleCheckboxChange3 = (event) => {
+      	setIsChecked3(event.target.checked);
+    	}*/
+  		/*63_1*/
+  		/*const [checked, setChecked] = useState(true);
+	
+  		let message;
+  		if (checked) {
+	  	message = <div>
+				  <h2>Ура, вам уже есть 18</h2>
+				  <p>здесь расположен контент только для взрослых</p>
+				</div>
+  		} else {
+		message = <p>увы, вам еще нет 18 лет:(</p>;
+  		}*/
+		/*63_2*/
+		/*const [checked, setChecked] = useState(true);
+	
+  		let message;
+		if (checked) {
+		message = <div>
+				  <p>Hidden text</p>
+				  </div>
+		} else {
+		message = <p></p>;
+		}*/
+		/*64*/
+		/*const [value, setValue] = useState('');
+	
+		function handleChange(event) {
+		setValue(event.target.value);
+		}*/
+		/*65*/
+		/*const texts = ['Москва', 'Новосибирск', 'Казань', 'Екатеринбург'];
+		const [value, setValue] = useState('');
+		
+		const options = texts.map((text, index) => {
+			return <option key={index}>{text}</option>;
+		});*/
+		/*66*/
+		/*const [value, setValue] = useState('');*/
+		/*67-NONE*/
+		/*68*/
+		/*const [value, setValue] = useState(1);
+	
+		function changeHandler(event) {
+		setValue(event.target.value);
+		}*/
+		/*69_1*/
+		/*const [value, setValue] = useState('Введите логин:');*/
+		/*69_2*/
+		/*const [checked, setChecked] = useState(false);*/
+		/*70*/
+		/*function getSum(arr) {
+			let sum = 0;
+			let mid = 0;
+			for (const elem of arr) {
+				sum += +elem;
+			}
+			for (const elem of arr) {
+				mid = sum/9
+			}
+			return mid;
+		}
+		const [notes, setNotes] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+	
+		function changeHandler(index, event) {
+		setNotes([...notes.slice(0, index), event.target.value, ...notes.slice(index + 1)]);
+		}
+	
+		const result = notes.map((note, index) => {
+		return <input
+			key={index}
+			value={note}
+			onChange={event => changeHandler(index, event)}
+		/>;
+		});*/
+		/*71*/
+		/*const initDate = {
+			year:  2025,
+			month: 12,
+			day:   31,
+		}
+		const [obj, setObj] = useState(initDate);
+	
+		function handleChange(prop, event) {
+		setObj({...obj, ...{[prop]: event.target.value}});
+		}
+		function getDayOfWeek(year, month, day) {
+			const date = new Date(year, month - 1, day);
+			const daysOfWeek = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+			return daysOfWeek[date.getDay()];
+		  }*/
+		/*72-NONE*/
+
+		/*73_1*/
+		/*<div>
+		<input
+		  type="text"
+		  value={inputText}
+		  onChange={(e) => setInputText(e.target.value)}
+		/>
+		<button onClick={handleAddNote}>Добавить элемент</button>
+		<ul>
+		  {notes.map((note, index) => (
+			<li key={index}>{note}</li>
+		  ))}
+		</ul>
+	  	</div>*/
+		/*73_2*/
+		/*const [notes, setNotes] = useState([1, 2, 3, 4, 5]);
+		const [inputText, setInputText] = useState(''); 
+	  
+		const handleAddNote = () => {
+		  if (inputText.trim()) {
+			setNotes([...notes, inputText]); 
+			setInputText(''); 
+		  }
+		};*/
+		/*74_1*/
+		/*	   const [numbers, setNumbers] = useState([1, 2, 3, 4, 5]);
+			   const [inputValue, setInputValue] = useState('');
+			   const [editIndex, setEditIndex] = useState(-1);
+			
+			   const squareNumber = index => {
+			     const newNumbers = numbers.map((num, i) => {
+			       return i === index ? num * num : num;
+			     });
+			     setNumbers(newNumbers);
+			   };*/
+			
+		/*74_2*/
+		/*	   const removeItem = index => {
+			     const newNumbers = numbers.filter((_, i) => i !== index);
+			     setNumbers(newNumbers);
+			   };*/
+			
+		/*74_3*/
+		/*	   const setToInput = (value, index) => {
+			     setInputValue(value);
+			     setEditIndex(index);
+			   };*/
+			
+		/*74_4*/
+		/*	   const updateItem = event => {
+			     const newNumbers = numbers.map((num, i) => {
+			       return i === editIndex ? parseInt(event.target.value, 10) || num : num;
+			     });
+			     setNumbers(newNumbers);
+			   };*/
+			
+		/*74_5*/
+		/*	   const reverseList = () => {
+			     setNumbers([...numbers].reverse());
+			   };*/
+
+		/*75*/
+		/*	const [numbers, setNumbers] = useState([1, 2, 3, 4, 5]);
+		  	const [newNumber, setNewNumber] = useState('');
+			const [inputs, setInputs] = useState({ input1: '', input2: '', input3: '' });
+		
+
+			const addNumber = () => {
+		      if (newNumber.trim() !== '') {
+		        setNumbers([...numbers, parseInt(newNumber)]);
+		      setNewNumber('');
+		     }
+		    };
+		
+		   const handleInputChange = (event) => {
+		     const { name, value } = event.target;
+		     setInputs({ ...inputs, [name]: value });
+		   };
+		
+		   const createListItem = () => {
+		     const newItem = `${inputs.input1} ${inputs.input2} ${inputs.input3}`.trim();
+		     if (newItem !== '') {
+		       setNumbers([...numbers, newItem]);
+		       setInputs({ input1: '', input2: '', input3: '' });
+		     }
+		   };*/
+		/*76*/
+			   /*const [items, setItems] = useState([
+			     { id: 1, text: 'Элемент 1' },
+			     { id: 2, text: 'Элемент 2' },
+			     { id: 3, text: 'Элемент 3' }
+			   ]);
+			   const [inputs, setInputs] = useState({ input1: '', input2: '', input3: '' });
+			   const [editId, setEditId] = useState(null);
+			
+			   const removeItem = id => {
+			     setItems(prevItems => prevItems.filter(item => item.id !== id));
+			   };
+			
+			   const setInputsForEdit = item => {
+			     setInputs({ input1: item.text, input2: item.text, input3: item.text });
+			     setEditId(item.id);
+			   };
+			
+			   const updateItemWithInputs = () => {
+			     if (editId) {
+			       setItems(prevItems =>
+			         prevItems.map(item =>
+			           item.id === editId
+			             ? { ...item, text: inputs.input1 } 
+			             : item
+			         )
+			       );
+			       setEditId(null);
+			       setInputs({ input1: '', input2: '', input3: '' });
+			     }
+			   };
+			
+			   const handleInputChange = (event) => {
+			     const { name, value } = event.target;
+			     setInputs(prevInputs => ({ ...prevInputs, [name]: value }));
+			   };*/
+		/*77*/
+		/*const [products, setProducts] = useState([
+			     { id: 1, summary: 'Краткое описание продукта 1', description: 'Полное описание продукта 1' },
+			     { id: 2, summary: 'Краткое описание продукта 2', description: 'Полное описание продукта 2' },
+			   ]);
+			
+			   const toggleDescription = id => {
+			     setProducts(products.map(product =>
+			       product.id === id ? { ...product, showDescription: !product.showDescription } : product
+			     ));
+			   };*/
+		/*78-NONE*/
+
+		/*79*/
+		/*const User = ({ text }) => {
+			return <div>{text}</div>;
+		  };
+		 
+		  export default User;
+		 
+		  import React from 'react';
+		  import User from './User'; 
+		 
+		  const App = () => {*/
+		 
+		 /*80*/
+		 /*
+		  import React from 'react';
+		  import User from './User'; 
+		 
+		  const App = () => {*/
+		 
+		 /*81*/
+		 /*
+		  import React from 'react';
+		 
+		  const Employee = ({ lastName, firstName, middleName, salary }) => {*/
+		 
+		 /*82*/
+		 /*
+		  import React from 'react';
+		  import Employee from './Employee'; 
+		 
+		  const App = () => {*/
+		 
+		 /*82*/
+		 /*
+		  import React from 'react';
+		  export default User;
+		 
+		  const User = ({ name, surn, age }) => {
+			return (
+			  <tr>
+				<td>{name}</td>
+				<td>{surn}</td>
+				<td>{age}</td>
+			  </tr>
+			);
+		  };
+		 
+		  import React from 'react';
+		  import User from './User'; 
+		 
+		  const App = () => {
+			const users = [
+			  { id: 1, name: 'user1', surn: 'surn1', age: 30 },
+			  { id: 2, name: 'user2', surn: 'surn2', age: 31 },
+			  { id: 3, name: 'user3', surn: 'surn3', age: 32 },
+			];*/
+		 
+		 
+		 /*84*/
+		 /*
+		  import React from 'react';
+		  import User from './User'; // Импортируем компонент User
+		 
+		  const App = () => {
+			const users = [
+			  { id: 1, name: 'user1', surn: 'surn1', age: 30 },
+			  { id: 2, name: 'user2', surn: 'surn2', age: 31 },
+			  { id: 3, name: 'user3', surn: 'surn3', age: 32 },
+			];
+		 
+			const renderUsers = (users) => {
+			  const userElements = [];
+			  for (let i = 0; i < users.length; i++) {
+				userElements.push(
+				  <User key={users[i].id} name={users[i].name} surn={users[i].surn} age={users[i].age} />
+				);
+			  }
+			  return userElements;
+			};*/
+		 
+		 /*85*/
+		 /*
+		  import React from 'react';
+		 
+		  const User = ({ name, surname, age }) => {
+			return (
+			  <tr>
+				<td>{name}</td>
+				<td>{surname}</td>
+				<td>{age}</td>
+			  </tr>
+			);
+		  };
+		 
+		  export default User;
+		 
+		  import User from './User';
+		 
+		  class Users extends Component {
+			state = {
+			  users: [
+				{ id: 1, name: 'user1', surname: 'surn1', age: 30 },
+				{ id: 2, name: 'user2', surname: 'surn2', age: 31 },
+				{ id: 3, name: 'user3', surname: 'surn3', age: 32 },
+			  ]
+			};
+		 
+			renderUsers = () => {
+			  const { users } = this.state;
+			  return users.map(user => (
+				<User key={user.id} name={user.name} surname={user.surname} age={user.age} />
+			  ));
+			};
+		 
+			render() {*/
+		/*95*/
+ 		/*import TempInp from './TempInp';
+ 		import Verdict from './Verdict';
+
+ 		const Calculator = () => {
+   		const [temperature, setTemperature] = useState('');
+
+   		const handleTemperatureChange = (temp) => {
+     	setTemperature(temp);
+   		};*/
+
+		/*98*/
+ 		/*
+		import './styles.css';
+ 		const ButtonsComponent = () => {*/
+		/*99*/
+		/*
+ 		const buttonStyle = {
+   		padding: '10px 20px',
+   		fontSize: '16px',
+  		color: 'white',
+   		backgroundColor: '#007bff',
+   		border: 'none',
+   		borderRadius: '5px',
+   		cursor: 'pointer'
+ 		};
+
+ 		const buttonHoverStyle = {
+  		backgroundColor: '#0056b3'
+ 		};
+
+ 		const buttonsContainerStyle = {
+   		display: 'flex',
+   		justifyContent: 'space-around',
+   		padding: '20px',
+   		backgroundColor: '#f0f0f0'
+ 		};
+
+ 		const ButtonsComponent = () => {
+   		const [isHovered, setIsHovered] = React.useState(false);*/
+
+
+		/*100*/
+ 		/*import styles from './styles.js';
+
+ 		const ButtonsComponent = () => {
+   		const [isHovered, setIsHovered] = React.useState(false);*/
+
+		/*101*/
+		/*
+ 		const ButtonsComponent = () => {
+   		const [isHovered, setIsHovered] = React.useState(false);*/
+
+		/*102*/
+		/*
+ 		const ButtonsComponent = () => {
+   		const [isHovered, setIsHovered] = useState(false);
+
+   		const buttonStyle = {
+     	padding: '10px 20px',
+     	fontSize: '16px',
+     	color: 'white',
+     	backgroundColor: '#007bff',
+     	border: 'none',
+     	borderRadius: '5px',
+     	cursor: 'pointer'
+   		};
+
+   		const buttonHoverStyle = {
+     	backgroundColor: '#0056b3'
+   		};
+
+   		const buttonsContainerStyle = {
+     	display: 'flex',
+     	justifyContent: 'space-around',
+     	padding: '20px',
+     	backgroundColor: '#f0f0f0'
+   		};*/
+
+		/*103*/
+		/*
+ 		import styled from 'styled-components';
+
+ 		const Button = styled.button`
+   		padding: 10px 20px;
+   		font-size: 16px;
+   		color: white;
+   		background-color: ${props => props.isHovered ? '#0056b3' : '#007bff'};
+   		border: none;
+  		border-radius: 5px;
+   		cursor: pointer;
+   		&:hover {
+     	background-color: #0056b3;
+   		}
+ 		`;
+
+ 		const ButtonsContainer = styled.div`
+   		display: flex;
+   		justify-content: space-around;
+   		padding: 20px;
+   		background-color: #f0f0f0;
+ 		`;
+
+ 		const ButtonsComponent = () => {
+   		const [isHovered, setIsHovered] = useState(false);*/
+
+		/*104*/
+
+ 		/*import styled from 'styled-components';
+
+ 		const BlockContainer = styled.div`
+   		display: flex;
+   		justify-content: space-around;
+   		padding: 20px;
+   		background-color: #f0f0f0;
+ 		`;
+
+ 		const StyledButton = styled.button`
+   		padding: 10px 20px;
+   		font-size: 16px;
+   		color: ${props => props.disabled ? '#6c757d' : 'white'};
+   		background-color: ${props => props.reset ? '#ffc107' : '#007bff'};
+   		border: none;
+   		border-radius: 5px;
+   		cursor: pointer;
+   		&:hover {
+     	background-color: ${props => props.reset ? '#e0a800' : '#0056b3'};
+   		}
+   		&:disabled {
+     	cursor: not-allowed;
+     	opacity: 0.65;
+   		}
+ 		`;
+
+ 		const Block = () => {*/
+
+		/*105*/
+		/*
+ 		import styled from 'styled-components';
+
+ 		const BlockContainer = styled.div`
+  		display: flex;
+ 		justify-content: space-around;
+   		padding: 20px;
+   		background-color: #f0f0f0;
+ 		`;
+
+ 		const StyledButton = styled.button`
+   		padding: 10px 20px;
+   		font-size: 16px;
+   		color: ${props => props.warn ? 'red' : 'white'};
+   		background-color: ${props => props.warn ? 'yellow' : 'green'};
+   		border: none;
+   		border-radius: 5px;
+   		cursor: pointer;
+   		&:hover {
+     	background-color: ${props => props.warn ? '#e0a800' : '#0056b3'};
+   		}
+   		&:disabled {
+     	cursor: not-allowed;
+     	opacity: 0.65;
+   		}
+ 		`;
+
+ 		const Block = () => {*/
+		/*106*/
+
+ 		/*const DIVA = styled.div`
+   			width: 150px;
+   			height: 150px;
+   			background-color: yellow;
+   			border: 2px solid black;
+ 		`;
+
+ 		const DIVB = styled(DIVA)`
+   			background-color: green;
+   			border-width: 3px;
+ 		`;
+
+
+ 		const Container = styled.div`
+   			display: flex;
+   			justify-content: center;
+   			align-items: center;
+   			gap: 20px; 
+ 		`;
+
+ 		const Block1 = () => {*/
+
+		/*108*/
+ 		/*import Inputs from './Inputs'; 
+	 	import styles from './App.module.css';*/ 
+
+	  	return (
+		/*1-3*/
+		/*<div className="App">
+		  <h1 class = "aaa">First</h1>
+		  <h2 class = "bbb">Second</h2>
+		  <p>NewOne</p>
+		</div>*/
+	
+		/*4*/
+		/*<ul>
+		  <li>1</li>
+		  <li>2</li>
+		  <li>3</li>
+		  <li>4</li>
+		  <li>5</li>
+		  <li>6</li>
+		  <li>7</li>
+		  <li>8</li>
+		  <li>9</li>
+		  <li>10</li>
+		</ul>*/
+		/*5*/
+		/*<ul>
+				<li>text1</li>
+				<li>text2</li>
+				<li>text3</li>
+			</ul>*/
+		/*6*/
+		/*<>
+		<ul>
+		  <li>text1</li>
+		  <li>text2</li>
+		  <li>text3</li>
+		</ul>
+			<ul>
+			<li>text1</li>
+			<li>text2</li>
+			<li>text3</li>
+		  </ul>
+		  </>
+		  <div>
+		<ul>
+		  <li>text1</li>
+		  <li>text2</li>
+		  <li>text3</li>
+		</ul>
+			<ul>
+			<li>text1</li>
+			<li>text2</li>
+			<li>text3</li>
+		  </ul>
+		  </div>
+		  /*7*/
+		/*<input />*/
+		/*8*/
+		/*<div>
+			<input /><input /><input />
+		  </div>*/
+		/*9*/
+		/*<>
+		  <p>{str1}</p>
+		  <p>{str2}</p>
+		</>*/
+		/*10*/
+		/*<div>
+			<p>name: {name}</p>
+			<p>age:  {age}</p>
+		</div>*/
+		/*11*/
+		/*<div>
+			<ul>
+				<li>{arr[0]}</li>
+				<li>{arr[1]}</li>
+				<li>{arr[2]}</li>
+				<li>{arr[3]}</li>
+				<li>{arr[4]}</li>
+			</ul>
+		</div>*/
+		/*12*/
+		/*<div>
+			<p>
+				name:    <span>{obj.name}</span><br></br>
+				surname: <span>{obj.surname}</span>
+			</p>
+		</div>*/
+    /*13*/
+    /*<div id = {attr}>text</div>*/
+    /*14*/
+    /*<ul>
+	    <li>{li1}</li>
+	    <li>{li2}</li>
+	    <li>{li3}</li>
+    </ul>*/
+	  /*15*/
+    /*<ul>{items}</ul>
+    /*16*/
+    /*<div>
+		  <input /><br></br>
+      <input /><br></br>
+      <input />
+    </div>*/
+    /*17*/
+    /*<div>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </div>*/
+    /*18*/
+    /*<div>
+      <table>
+        <thead>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </thead>
+        <tbody>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tbody>
+          <tfoot>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tfoot>
+      </table>
+    </div>*/
+    /*19*/
+    /*<div>
+		  result: {num1 ** num2}
+	  </div>*/
+    /*20*/
+    /*<div>
+		  result: {name + ' ' + surname}
+	  </div>*/
+    /*21*/
+    /*<div>
+		  result: {Math.sqrt(num)}
+	  </div>*/
+    /*22*/
+    /*<div>
+      {text}
+    </div>*/
+    /*23*/
+    /*<div>
+      {text}
+    </div>*/
+	/*24*/
+	/*<div>
+      	{age>18 ? <p>text1</p> : <p>text2</p>}
+    </div>*/
+	/*25*/
+	/*<div>
+		{isAuth && <p>вы авторизованы</p>}
+	</div>*/
+	/*26*/
+	/*<div>
+		{!isAuth && <p>пожалуйста, авторизуйтесь</p>}
+	</div>
+	/*27*/
+	/*<div>
+		{sum}
+	</div>
+	);*/
+        /*37*/
+    /*<div>
+		{arr}
+	</div>*/
+        /*38*/
+    /*<div>
+		{arr}
+  	</div>*/
+        /*39*/
+    /*<div>
+		{res}
+    </div>*/
+    /*40
+    <div>
+	{res}
+    </div>
+    /*41*/
+	/*<div>
+		{res}
+	</div>*/
+    /*42*/
+	/*<div>
+		{res}
+	</div>*/
+    /*43*/
+	/*<table>
+		<thead>
+			<tr>
+				<td>Имя</td>
+				<td>Фамилия</td>
+				<td>Возраст</td>
+			</tr>
+		</thead>
+		<tbody>
+			{rows}
+		</tbody>
+	</table>*/
+    /*44-NONE*/
+    /*45-NONE*/
+	/*46-NONE*/
+	/*47-NONE*/
+
+	/*48*/
+
+	/*49*/
+
+	/*50*/
+		
+	/*51-NONE*/
+	/*51-NONE*/
+  /*52*/
+  /*<div>
+    <span>{name}</span>
+    <span>{surname}</span>
+    <span>{age}</span>
+  </div>*/
+  /*53*/
+    /*<div>
+		<span>{name}</span>
+		<button onClick={() => setName('Makar ')}>btn1</button>
+        <span>{surname}</span>
+		<button onClick={() => setSurname('Kava ')}>btn2</button>
+	</div>*/
+  /*54_1*/
+    /*<div>
+		<span>{banned ? 'Пользователь был забанен' : 'Пользователь разбанен'}</span>
+		<button onClick={() => setBanned(!banned)}>btn</button>
+	</div>*/
+  /*54_2*/
+    /*<div>
+		<span>{banned ? 'Пользователь был забанен' : 'Пользователь разбанен'}</span>
+		<button onClick={() => setBanned(!banned)}>btn</button>
+	</div>*/
+  /*55*/
+    /*<div>
+		<span>{count}</span>
+		<button onClick={() => setCount(count + 1)}>+</button>
+        <button onClick={() => setCount(count - 1)}>-</button>
+	</div>*/
+  /*56*/
+    /*<div>
+      <input value1={value1} onChange={event => setValue1(event.target.value)} />
+      <p>text: {value1}</p>
+      <input value2={value2} onChange={event => setValue2(event.target.value)} />
+      <p>text: {value2}</p>
+    </div>*/
+  /*57*/
+    /*<div>
+		<input value={value} onChange={handleChange} />
+		<p>{value.length}</p>
+	</div>
+  )*/
+  /*58_1*/
+    /*<div>
+      <input value={value} onChange={handleChange} />
+      <p>Год рождения пользователя: {count(value)}</p>
+    </div>*/
+ 	/*58_2*/
+    /*<div>
+      <input value={value} onChange={handleChange} />
+      <p>C = {count(value)}</p>
+    </div>*/
+  	/*59*/
+    /*<div>
+		<input value={value1} onChange={handleChange1} /><br/>
+		<input value={value2} onChange={handleChange2} /><br/>
+        <input value={value3} onChange={handleChange3} /><br/>
+        <input value={value4} onChange={handleChange4} /><br/>
+        <input value={value5} onChange={handleChange5} />
+		<p>result: {(value1 + value2 + value3 + value4 + value5)/5}</p>
+	</div>*/
+  	/*60_1*/
+    /*<div>
+		<input value={value1} onChange={event => setValue1(event.target.value)} />
+		<input value={value2} onChange={event => setValue2(event.target.value)} />
+		
+		<button onClick={() => setResult(Number(value1) + Number(value2))}>+</button>
+        <button onClick={() => setResult(Number(value1) * Number(value2))}>*</button>
+		<p>result: {result}</p>
+	</div>*/
+  	/*60_2*/
+    /*<div>
+        <input id="dateRequired" type="date" name="dateRequired" defaultValue={date} />
+		<input value={value2} onChange={event => setValue2(event.target.value)} />
+		
+		<button onClick={() => setResult(Number(value1) - Number(value2))}>-</button>
+		<p>result: {result}</p>
+	</div>*/
+  	/*60_3*/
+    
+  	/*60_4*/
+    
+  	/*60_5*/
+    
+  	/*61_1*/
+    /*<div>
+		<textarea value={value} onChange={event => setValue(event.target.value)} />
+		<p>{value}</p>
+	</div>*/
+  	/*61_2*/
+    
+  	/*62_1*/
+    /*<div>
+      <input type="checkbox" onChange={handleCheckboxChange} />
+      <button onClick={handleButtonClick}>Подтвердить</button>
+      <p>{message}</p>
+    </div>*/
+  	/*62_2*/
+    /*<div>
+      <input type="checkbox" onChange={handleCheckboxChange1} />
+      <button onClick={handleButtonClick1}>Html</button><br />
+      <input type="checkbox" onChange={handleCheckboxChange2} />
+      <button onClick={handleButtonClick2}>CSS</button><br />
+      <input type="checkbox" onChange={handleCheckboxChange3} />
+      <button onClick={handleButtonClick3}>JS</button>
+      <p>Html: {message1}</p>
+      <p>CSS: {message2}</p>
+      <p>JS: {message3}</p>
+    </div>*/
+  	/*63_1*/
+  	/*<div>
+  	<h2>Вам уже есть 18 лет?</h2>
+ 	<input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} />
+  	<div>{message}</div>
+	</div>*/
+	/*63_2*/
+	/*<div>
+ 	<input type="checkbox" checked={checked} onChange={() => setChecked(!checked)} />
+  	<div>{message}</div>
+	</div>*/
+	/*64*/
+	/*<div>
+		<select value={value} onChange={handleChange}>
+			<option>Москва</option>
+			<option>Новосибирск</option>
+			<option>Казань</option>
+			<option>Екатеринбург</option>
+		</select>
+		<p>Ваш выбор: {value}</p>
+	</div>*/
+	/*65*/
+	/*<div>
+		<select value={value} onChange={(event) => setValue(event.target.value)}>
+			{options}
+		</select>
+		<p>
+			Ваш выбор: {value}
+		</p>
+	</div>*/
+	/*66*/
+	/*<div>
+	<h2>Выберите свою возрастную группу:</h2>
+	<select value={value} onChange={event => setValue(event.target.value)}>
+		<option value="1">От 0 до 12</option>
+		<option value="2">От 13 до 17</option>
+		<option value="3">От 18 до 25</option>
+		<option value="4">Старше 25 лет</option>
+	</select>
+	<p>
+		{value === '1' && 'вы выбрали первый пункт'}
+		{value === '2' && 'вы выбрали второй пункт'}
+		{value === '3' && 'вы выбрали третий пункт'}
+		{value === '4' && 'вы выбрали четвёртый пункт'}
+	</p>
+	</div>*/
+	/*67-NONE*/
+	/*68_1*/
+	/*<div>
+		<input
+			type="radio"
+			name="radio"
+			value="1"
+			checked={value === '1' ? true : false}
+			onChange={changeHandler}
+		/>
+		<input
+			type="radio"
+			name="radio"
+			value="2"
+			checked={value === '2' ? true : false}
+			onChange={changeHandler}
+		/>
+		<input
+			type="radio"
+			name="radio"
+			value="3"
+			checked={value === '3' ? true : false}
+			onChange={changeHandler}
+		/>
+		<p>
+			ваш выбор: {[value]}
+		</p>
+	</div>*/
+	/*<68_2>*/
+	/*<div>
+	<h2>Выберите язык программирования:</h2>
+	<input
+		type="radio"
+		name="radio"
+		value="C++"
+		checked={value === '1' ? true : false}
+		onChange={changeHandler}
+	/>
+	<input
+		type="radio"
+		name="radio"
+		value="JavaScript Отличный выбор!"
+		checked={value === '2' ? true : false}
+		onChange={changeHandler}
+	/>
+	<input
+		type="radio"
+		name="radio"
+		value="Python"
+		checked={value === '3' ? true : false}
+		onChange={changeHandler}
+	/>
+	<p>
+		Вы выбрали: {[value]}
+	</p>
+	</div>*/
+	/*69_1*/
+	/*<div>
+		<input defaultValue={value} />
+	</div>*/
+	/*69_2*/
+	/*<div>
+		<h2>Вам больше 18 лет?</h2>
+		<input type="checkbox" defaultChecked={checked} />
+	</div>*/
+	/*70*/
+	/*<div>
+		{result}
+		{getSum(notes)}
+	</div>*/
+	/*71_1*/
+	/*<div>
+		{obj.year}-{obj.month}-{obj.day} ({getDayOfWeek(obj.year, obj.month, obj.day)})
+	</div>*/
+	/*71_2*/
+	/*<div>
+		<input value={obj.year} onChange={event => handleChange('prop1', event)} />
+		<input value={obj.month} onChange={event => handleChange('prop2', event)} />
+		<input value={obj.day} onChange={event => handleChange('prop3', event)} />
+		
+		<br />
+		{obj.year}-{obj.month}-{obj.day} ({getDayOfWeek(obj.year, obj.month, obj.day)})
+	</div>*/
+
+	/*73_1*/
+    /*<div>
+      <ul>
+        {notes.map((note, index) => (
+          <li key={index}>{note}</li>
+        ))}
+      </ul>
+      <button onClick={handleAddNote}>Добавить элемент</button>
+    </div>*/
+	/*73_2*/
+	/*<div>
+      <input
+        type="text"
+        value={inputText}
+        onChange={(e) => setInputText(e.target.value)}
+      />
+      <button onClick={handleAddNote}>Добавить элемент</button>
+      <ul>
+        {notes.map((note, index) => (
+          <li key={index}>{note}</li>
+        ))}
+      </ul>
+    </div>*/
+	/*74*/
+    /*<div>
+       <input
+         type="text"
+         value={inputValue}
+         onChange={e => setInputValue(e.target.value)}
+         onBlur={updateItem}
+       />
+       <button onClick={reverseList}>Обратный порядок</button>
+       <ul>
+         {numbers.map((number, index) => (
+           <li key={index} onClick={() => setToInput(number, index)}>
+             {number}
+             <button onClick={() => squareNumber(index)}>Возвести в квадрат</button>
+             <button onClick={() => removeItem(index)}>Удалить</button>
+           </li>
+         ))}
+       </ul>
+     </div>*/
+	/*75*/
+	/*<div>
+       <input
+         type="text"
+         value={newNumber}
+         onChange={(e) => setNewNumber(e.target.value)}
+       />
+       <button onClick={addNumber}>Добавить число</button>
+
+       <input
+         name="input1"
+         value={inputs.input1}
+         onChange={handleInputChange}
+       />
+       <input
+         name="input2"
+         value={inputs.input2}
+         onChange={handleInputChange}
+       />
+       <input
+         name="input3"
+         value={inputs.input3}
+         onChange={handleInputChange}
+       />
+       <button onClick={createListItem}>Создать элемент</button>
+
+       <ul>
+         {numbers.map((number, index) => (
+           <li key={index}>{number}</li>
+         ))}
+       </ul>
+     </div>*/
+	/*76*/
+	/*<div>
+       <div>
+         <input
+           name="input1"
+           value={inputs.input1}
+           onChange={handleInputChange}
+         />
+         <input
+           name="input2"
+           value={inputs.input2}
+           onChange={handleInputChange}
+         />
+         <input
+           name="input3"
+           value={inputs.input3}
+           onChange={handleInputChange}
+         />
+         <button onClick={updateItemWithInputs}>Обновить элемент</button>
+       </div>
+       <ul>
+         {items.map(item => (
+           <li key={item.id}>
+             {item.text}
+             <button onClick={() => removeItem(item.id)}>Удалить</button>
+             <button onClick={() => setInputsForEdit(item)}>Редактировать</button>
+           </li>
+         ))}
+       </ul>
+     </div>*/
+	/*77*/
+	/*<div>
+       {products.map(product => (
+         <p key={product.id}>
+           {product.summary}
+           <button onClick={() => toggleDescription(product.id)}>
+             {product.showDescription ? 'Скрыть' : 'Показать'} описание
+           </button>
+           {product.showDescription && <span>{product.description}</span>}
+         </p>
+       ))}
+     </div>*/
+
+	/*79*/
+	/*
+     <div>
+       <h1>Пользователи</h1>
+       <User text="Это текст, выводимый компонентом User" />
+       {/* Здесь можно добавить больше компонентов User с разным текстом *//*}*/
+	   /*</div>*/
+ 
+ /*80*/
+	/*  <div>
+		<h1>Пользователи</h1>
+		<User text="Пользователь 1: Это текст для первого пользователя" />
+		<User text="Пользователь 2: Это текст для второго пользователя" />
+		<User text="Пользователь 3: Это текст для третьего пользователя" />
+		{/* Добавьте больше экземпляров User при необходимости *//*}*/
+	  	/*</div>*/
+ 
+ 
+ /*81*/
+ /*
+	  <div style={{ margin: '10px', padding: '10px', border: '1px solid #ccc' }}>
+		<h2>Сотрудник</h2>
+		<p><strong>Фамилия:</strong> {lastName}</p>
+		<p><strong>Имя:</strong> {firstName}</p>
+		<p><strong>Отчество:</strong> {middleName}</p>
+		<p><strong>Зарплата:</strong> {salary} руб.</p>
+	  </div>
+	);
+  };*/
+ 
+ /*82*/
+ /*  <div>
+		<Employee
+		  lastName="Иванов"
+		  firstName="Иван"
+		  middleName="Иванович"
+		  salary="50000"
+		/>
+		<Employee
+		  lastName="Петров"
+		  firstName="Петр"
+		  middleName="Петрович"
+		  salary="60000"
+		/>
+		<Employee
+		  lastName="Сидоров"
+		  firstName="Сидор"
+		  middleName="Сидорович"
+		  salary="55000"
+		/>
+	   
+	  </div>
+	);
+  };*/
+ 
+ 
+ /*82*/
+ /*
+	  <table>
+		<thead>
+		  <tr>
+			<th>Имя</th>
+			<th>Фамилия</th>
+			<th>Возраст</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  {users.map(user => (
+			<User key={user.id} name={user.name} surn={user.surn} age={user.age} />
+		  ))}
+		</tbody>
+	  </table>
+	);
+  };*/
+ 
+ /*84*/
+ /*   <table>
+		<thead>
+		  <tr>
+			<th>Имя</th>
+			<th>Фамилия</th>
+			<th>Возраст</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  {renderUsers(users)}
+		</tbody>
+	  </table>
+	);
+  };*/
+ 
+ /*85*/
+ /*
+		<table>
+		  <thead>
+			<tr>
+			  <th>Имя</th>
+			  <th>Фамилия</th>
+			  <th>Возраст</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			{this.renderUsers()}
+		  </tbody>
+		</table>*/
+	/*95*/
+	/*<div>
+		<TempInp onTemperatureChange={handleTemperatureChange} />
+		<Verdict celsius={parseFloat(temperature)} />
+	</div>*/
+
+	/*98*/
+	/*
+	<div className="buttons-container">
+		<button className="button">Кнопка 1</button>
+		<button className="button">Кнопка 2</button>
+	</div>*/
+	
+	/*99*/
+	/*
+	<div style={buttonsContainerStyle}>
+	<button
+  		style={isHovered ? {...buttonStyle, ...buttonHoverStyle} : buttonStyle}
+  		onMouseEnter={() => setIsHovered(true)}
+  		onMouseLeave={() => setIsHovered(false)}
+	>
+
+	</button>
+	<button
+  		style={buttonStyle}
+  		onMouseEnter={() => setIsHovered(true)}
+  		onMouseLeave={() => setIsHovered(false)}
+	>
+
+	</button>
+	</div>*/
+	/*100*/
+	/*
+	<div style={styles.buttonsContainer}>
+	<button
+  		style={isHovered ? {...styles.button, ...styles.buttonHover} : styles.button}
+  		onMouseEnter={() => setIsHovered(true)}
+  		onMouseLeave={() => setIsHovered(false)}
+	>
+
+	</button>
+	<button
+  		style={styles.button}
+  		onMouseEnter={() => setIsHovered(true)}
+  		onMouseLeave={() => setIsHovered(false)}
+	>
+
+	</button>
+	</div>*/
+
+	/*101*/
+	/*<div style={{ display: 'flex', justifyContent: 'space-around', padding: '20px', backgroundColor: '#f0f0f0' }}>
+	<button
+  	style={isHovered ? {
+		padding: '10px 20px',
+		fontSize: '16px',
+		color: 'white',
+		backgroundColor: '#0056b3',
+		border: 'none',
+		borderRadius: '5px',
+		cursor: 'pointer'
+  	} : {
+		padding: '10px 20px',
+		fontSize: '16px',
+		color: 'white',
+		backgroundColor: '#007bff',
+		border: 'none',
+		borderRadius: '5px',
+		cursor: 'pointer'
+  	}}
+ 		 onMouseEnter={() => setIsHovered(true)}
+  		onMouseLeave={() => setIsHovered(false)}
+	>
+
+	</button>
+	<button
+  	style={{
+		padding: '10px 20px',
+		fontSize: '16px',
+		color: 'white',
+		backgroundColor: '#007bff',
+		border: 'none',
+		borderRadius: '5px',
+		cursor: 'pointer'
+  	}}
+  	onMouseEnter={() => setIsHovered(true)}
+  	onMouseLeave={() => setIsHovered(false)}
+	>
+
+	</button>
+	</div>*/
+
+	/*102*/
+	/*<div style={buttonsContainerStyle}>
+	<button
+ 		 style={isHovered ? {...buttonStyle, ...buttonHoverStyle} : buttonStyle}
+ 		 onMouseEnter={() => setIsHovered(true)}
+ 		 onMouseLeave={() => setIsHovered(false)}
+	>
+
+	</button>
+	<button
+  		style={buttonStyle}
+  		onMouseEnter={() => setIsHovered(true)}
+  		onMouseLeave={() => setIsHovered(false)}
+	>
+
+	</button>
+	</div>*/
+
+	/*103*/
+	/*	<ButtonsContainer>
+		<Button
+  		isHovered={isHovered}
+  		onMouseEnter={() => setIsHovered(true)}
+  		onMouseLeave={() => setIsHovered(false)}
+	>
+
+	</Button>
+	<Button
+  		onMouseEnter={() => setIsHovered(true)}
+  		onMouseLeave={() => setIsHovered(false)}
+	>	
+
+	</Button>
+	</ButtonsContainer>*/
+
+	/*104*/
+	/*<BlockContainer>
+	<StyledButton disabled>
+
+	</StyledButton>
+	<StyledButton>
+
+	</StyledButton>
+	<StyledButton reset type="reset">
+
+	</StyledButton>
+	</BlockContainer>*/
+
+	/*105*/
+	/*<BlockContainer>
+	<StyledButton disabled>
+  		Заблокированная Кнопка
+	</StyledButton>
+	<StyledButton warn>
+
+	</StyledButton>
+	<StyledButton reset type="reset">
+
+	</StyledButton>
+	</BlockContainer>*/
+
+
+	/*106*/
+	/*<Container>
+	<DIVA />
+	<DIVB />
+	<DIVA />
+	</Container>*/
+
+	/*108*/
+	/*
+	<div className={styles.wrapper}>
+	<h1 className={styles.title}>Мое Приложение Inputs</h1>
+	<div className={styles.inputsContainer}>
+  		<Inputs />
+	</div>
+	</div>*/
+
+	);
+}
+/*export default App;*/
